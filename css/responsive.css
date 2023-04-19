@@ -1,0 +1,212 @@
+/* ===============================
+           NAVBAR START
+=================================*/
+@media (max-width: 1199px) {
+  #navigation_bar .container ul.navbar-nav li.nav-item a.nav-link {
+    font-size: 14px;
+  }
+}
+@media (max-width: 991px) {
+  .navbar-toggler {
+    display: none;
+  }
+  #navigation_bar .container button.offcanvas_btn {
+    display: block;
+  }
+}
+/* ===============================
+           NAVBAR END
+=================================*/
+/* ===============================
+           BANNER START
+=================================*/
+@media (max-width: 1199px) {
+  #banner .overlay .container .row .col-lg-6 .banner_info h4 {
+    font-size: 18px;
+    text-align: center;
+  }
+  #banner .overlay .container .row .col-lg-6 .banner_info p {
+    text-align: center;
+  }
+}
+@media (max-width: 991px) {
+  #banner .overlay .container .row .col-lg-6 .banner_info h1 span {
+    display: block;
+  }
+  #banner .overlay .container .row .col-lg-6 .banner_info .banner_btn {
+    justify-content: center;
+  }
+  #banner .overlay .container .row .col-lg-6 .banner_info .banner_btn a {
+    padding: 10px 10px;
+  }
+  #banner .overlay .container .row .col-lg-6 .banner_info .banner_btn a i {
+    font-size: 20px;
+  }
+  #banner .overlay .container .row .col-lg-6 .banner_info h1 {
+    font-size: 70px;
+  }
+  #banner .overlay .container .row .col-lg-6 .banner_info h1 span {
+    font-size: 40px;
+  }
+  #banner .overlay .container .row .col-lg-6 .banner_info h4 {
+    font-size: 16px;
+  }
+  #banner .overlay .container .row .col-lg-6 .banner_info p {
+    font-size: 14px;
+  }
+  #banner .overlay .container .row .col-lg-6 .banner_info .banner_btn a {
+    font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  #banner .overlay .container .row .col-lg-6 .banner_info h1 {
+    font-size: 65px;
+  }
+  #banner .overlay .container .row .col-lg-6 .banner_info h1 span {
+    font-size: 35px;
+  }
+  #banner .overlay .container .row .col-lg-6 .banner_info h4 {
+    font-size: 14px;
+  }
+  #banner .overlay .container .row .col-lg-6 .banner_info p {
+    font-size: 12px;
+  }
+  #banner .overlay .container .row .col-lg-6 .banner_info .banner_btn a {
+    font-size: 20px;
+  }
+}
+@media (max-width: 575px) {
+  #banner .overlay .container .row .col-lg-6 .banner_info h1 {
+    font-size: 55px;
+  }
+  #banner .overlay .container .row .col-lg-6 .banner_info h1 span {
+    font-size: 30px;
+  }
+  #banner .overlay .container .row .col-lg-6 .banner_info h4 {
+    font-size: 12px;
+  }
+  #banner .overlay .container .row .col-lg-6 .banner_info p {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  #banner .overlay .container .row .col-lg-6 .banner_info .banner_btn a {
+    font-size: 16px;
+  }
+  #banner .overlay .container .row .col-lg-6 .banner_info .banner_btn a i {
+    font-size: 16px;
+  }
+  #banner
+    .overlay
+    .container
+    .row
+    .col-lg-6
+    .banner_info
+    .banner_btn
+    a
+    i.fa-info {
+    height: 25px;
+    width: 25px;
+  }
+}
+/* ===============================
+           BANNER END
+=================================*/
+/* ===============================
+           QUALITY START
+=================================*/
+@media (max-width: 1199px) {
+  #quality .container .row .col-lg-7 .text h3 {
+    font-size: 40px;
+  }
+  #quality .container .row .col-lg-7 .text p {
+    font-size: 14px;
+    letter-spacing: 0.14em;
+  }
+}
+@media (max-width: 991px) {
+  #quality .container .row .col-lg-7 .text h3 {
+    font-size: 36px;
+  }
+  #quality .container .row .col-lg-7 .text {
+    text-align: center;
+  }
+  #quality .container .row .col-lg-7 .text button {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  #quality .container .row .col-lg-7 .text h3 {
+    font-size: 36px;
+    text-align: center;
+  }
+  #quality .container .row .col-lg-7 .text p {
+    text-align: justify;
+    margin-top: 50px;
+  }
+  #quality .container .row .col-lg-7 .text button {
+    padding: 12px 16px;
+  }
+}
+@media (max-width: 575px) {
+  #quality .container .row .col-lg-7 .text h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  #quality .container .row .col-lg-7 .text p {
+    font-size: 12px;
+  }
+}
+/* ===============================
+           QUALITY END
+=================================*/
+/* ===============================
+           LINKS START
+=================================*/
+@media (max-width: 1199px) {
+  #links .container .row .col-lg-3 .item p {
+    font-size: 14px;
+    text-align: justify;
+  }
+}
+@media (max-width: 991px) {
+  #links .container .row .col-lg-3 .item .heading h4 {
+    border-bottom: 1px solid white;
+  }
+  #links .container .row .col-lg-2 .item .heading h4 {
+    border-bottom: 1px solid;
+  }
+}
+@media (max-width: 767px) {
+  #links .container .row .col-lg-12 .item {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #links .container .row .col-lg-2.images_text .item {
+    display: flex;
+    justify-content: center;
+  }
+  #links .container .row .col-lg-3 .item p {
+    text-align: center;
+  }
+  #links .container .row .col-lg-3 .item {
+    text-align: center;
+  }
+  #links .container .row .col-lg-2.my_links .item {
+    text-align: center;
+  }
+}
+/* ===============================
+           LINKS END
+=================================*/
+/* ===============================
+           NAVBAR START
+=================================*/
+/* ===============================
+           NAVBAR END
+=================================*/
+/* ===============================
+           NAVBAR START
+=================================*/
+/* ===============================
+           NAVBAR END
+=================================*/

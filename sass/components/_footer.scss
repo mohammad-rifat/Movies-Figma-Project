@@ -1,0 +1,32 @@
+@import "../variable/variable";
+@import "../mixins/mixin";
+/* ====================== 
+      FOOTER START 
+=========================*/
+footer {
+  background-color: $footer_bg;
+  padding: 25px 0;
+  .container {
+    .row {
+      .col-lg-12 {
+        .text {
+            text-align: center;
+          span {
+            font-family: $font-family-jura;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            color: $white_color;
+            a {
+             color: $orange;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* ====================== 
+      FOOTER END
+=========================*/

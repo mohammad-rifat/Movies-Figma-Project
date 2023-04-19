@@ -1,0 +1,25 @@
+@import "../variable/variable";
+/* =====================
+COMMON CSS START 
+=======================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+a {
+  display: inline-block;
+  color: $black;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+img {
+  vertical-align: middle;
+}
+/* =====================
+COMMON CSS END
+=======================*/

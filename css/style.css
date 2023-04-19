@@ -1,0 +1,446 @@
+/* =====================
+COMMON CSS START 
+=======================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+a {
+  display: inline-block;
+  color: #000000;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* =====================
+COMMON CSS END
+=======================*/
+/* ALL COMPONENTS START */
+/* ====================== 
+      NAVBAR START 
+=========================*/
+#navigation_bar {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+#navigation_bar .container a {
+  max-width: 271px;
+  max-height: 60px;
+}
+#navigation_bar .container a img {
+  max-width: inherit;
+  max-height: inherit;
+}
+#navigation_bar .container ul.navbar-nav li.nav-item {
+  margin-left: 35px;
+}
+#navigation_bar .container ul.navbar-nav li.nav-item a.nav-link {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.12;
+  text-align: center;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  padding: 0;
+  padding-bottom: 5px;
+  position: relative;
+}
+#navigation_bar .container ul.navbar-nav li.nav-item a.nav-link::after {
+  content: "";
+  height: 1px;
+  width: 0%;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all linear 0.3s;
+}
+#navigation_bar .container ul.navbar-nav li.nav-item a.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ====================== 
+      NAVBAR END
+=========================*/
+/* ====================== 
+      OFFCANVAS SIDEBAR START
+=========================*/
+#navigation_bar .container button.offcanvas_btn {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  display: none;
+}
+#navigation_bar .container button.offcanvas_btn i {
+  font-size: 25px;
+}
+
+.offcanvas .offcanvas-header {
+  background-color: #101C2E;
+  text-align: center;
+}
+.offcanvas .offcanvas-header .offcanvas-title {
+  color: #ffffff;
+}
+.offcanvas .offcanvas-header .btn-close {
+  background: none;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 100%;
+}
+.offcanvas .offcanvas-header .btn-close i {
+  color: white;
+  opacity: 100%;
+  font-size: 25px;
+}
+.offcanvas .offcanvas-header .btn-close:focus {
+  box-shadow: none;
+}
+.offcanvas .offcanvas-body {
+  background-color: #162741;
+}
+.offcanvas .offcanvas-body ul li {
+  margin-bottom: 1px;
+  text-align: center;
+}
+.offcanvas .offcanvas-body ul li a {
+  color: #ffffff;
+  font-weight: bold;
+  transition: all linear 0.3s;
+}
+.offcanvas .offcanvas-body ul li:hover a {
+  opacity: 0.5;
+}
+
+/* ====================== 
+      OFFCANVAS SIDEBAR END
+=========================*/
+/* ====================== 
+      BANNER START 
+=========================*/
+#banner {
+  background-image: url("../images/Banner_BG.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#banner .overlay {
+  padding-top: 166px;
+  background: linear-gradient(82.06deg, rgba(1, 1, 1, 0.62) 46.14%, rgba(31, 169, 180, 0) 101.22%);
+  box-shadow: inset 0px 115px 83px rgba(0, 0, 0, 0.7);
+}
+#banner .overlay .container .row .col-lg-6 .banner_info h1 {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 112%;
+  text-align: center;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+}
+#banner .overlay .container .row .col-lg-6 .banner_info h1 span {
+  font-size: 50px;
+}
+#banner .overlay .container .row .col-lg-6 .banner_info h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 112%;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+}
+#banner .overlay .container .row .col-lg-6 .banner_info p {
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+#banner .overlay .container .row .col-lg-6 .banner_info .banner_btn {
+  display: flex;
+  gap: 40px;
+  padding-bottom: 66px;
+}
+#banner .overlay .container .row .col-lg-6 .banner_info .banner_btn a {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 29px;
+  line-height: 112%;
+  text-align: center;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  background-color: #244b49;
+  padding: 16px 20px;
+  border-radius: 5px;
+  transition: all linear 0.3s;
+  border: none;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+#banner .overlay .container .row .col-lg-6 .banner_info .banner_btn a:hover {
+  background-color: #ffffff;
+  color: #173157;
+}
+#banner .overlay .container .row .col-lg-6 .banner_info .banner_btn a i {
+  font-size: 25px;
+}
+#banner .overlay .container .row .col-lg-6 .banner_info .banner_btn a i.fa-info {
+  font-size: 15px;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all linear 0.3s;
+}
+#banner .overlay .container .row .col-lg-6 .banner_info .banner_btn a:hover i.fa-info {
+  border-color: #173157;
+}
+#banner .overlay .movie_slider .slide_item {
+  margin: 0 15px;
+}
+#banner .overlay .movie_slider .slide_item .movie_item .image {
+  position: relative;
+}
+#banner .overlay .movie_slider .slide_item .movie_item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#banner .overlay .movie_slider .slide_item .movie_item .image .movie_overlay {
+  background: rgba(22, 39, 65, 0.78);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+#banner .overlay .movie_slider .slide_item .movie_item .image .movie_overlay a {
+  height: 90px;
+  width: 90px;
+  border: 1px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+#banner .overlay .movie_slider .slide_item .movie_item .image .movie_overlay a i {
+  font-size: 40px;
+  color: #ffffff;
+}
+#banner .overlay .movie_slider .slide_item.slick-center .movie_item .image .movie_overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ====================== 
+      BANNER END
+=========================*/
+/* ====================== 
+      QUALITY START 
+=========================*/
+#quality {
+  background-color: #162741;
+  padding: 120px 0;
+}
+#quality .container .row .col-lg-7 .text h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 112%;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+}
+#quality .container .row .col-lg-7 .text p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  margin-top: 12px;
+}
+#quality .container .row .col-lg-7 .text button {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 29px;
+  line-height: 112%;
+  text-align: center;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  background-color: #244b49;
+  padding: 16px 20px;
+  border-radius: 5px;
+  transition: all linear 0.3s;
+  border: none;
+}
+#quality .container .row .col-lg-7 .text button:hover {
+  background-color: #ffffff;
+  color: #173157;
+}
+#quality .container .row .col-lg-5 .image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ====================== 
+      QUALITY END
+=========================*/
+/* ====================== 
+      LINKS START 
+=========================*/
+#links {
+  background-color: #101C2E;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+#links .container .row .col-lg-12 {
+  padding-bottom: 44px;
+}
+#links .container .row .col-lg-12 .item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#links .container .row .col-lg-12 .item .social_links a {
+  display: inline-flex;
+  height: 35px;
+  width: 35px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  margin-left: 10px;
+  transition: all linear 0.3s;
+}
+#links .container .row .col-lg-12 .item .social_links a:hover {
+  color: #FF2D2D;
+  border-color: #FF2D2D;
+}
+#links .container .row .col-lg-2 .item {
+  width: 100%;
+  display: flex;
+}
+#links .container .row .col-lg-3 .item p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  padding-right: 15px;
+}
+#links .container .row .col-lg-3 .item {
+  display: block;
+}
+#links .container .row .col-lg-3 .item .heading h4 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+#links .container .row .col-lg-3 .item .other_links a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  color: #E4E4E4;
+  display: block;
+  margin-bottom: 1px;
+  transition: all linear 0.3s;
+}
+#links .container .row .col-lg-3 .item .other_links a:hover {
+  opacity: 0.8;
+}
+#links .container .row .col-lg-2 .item {
+  display: block;
+}
+#links .container .row .col-lg-2 .item .heading h4 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+#links .container .row .col-lg-2 .item .other_links a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  color: #E4E4E4;
+  display: block;
+  margin-bottom: 1px;
+}
+#links .container .row .col-lg-2 .item .other_links a:hover {
+  opacity: 0.8;
+}
+
+/* ====================== 
+      LINKS END
+=========================*/
+/* ====================== 
+      FOOTER START 
+=========================*/
+footer {
+  background-color: #080F18;
+  padding: 25px 0;
+}
+footer .container .row .col-lg-12 .text {
+  text-align: center;
+}
+footer .container .row .col-lg-12 .text span {
+  font-family: "Jura", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+footer .container .row .col-lg-12 .text span a {
+  color: #FFAB34;
+}
+
+/* ====================== 
+      FOOTER END
+=========================*/
+/* ALL COMPONENTS END*//*# sourceMappingURL=style.css.map */

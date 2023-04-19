@@ -1,0 +1,45 @@
+@import "../variable/variable";
+@mixin paragraph($color, $font-family, $font-size) {
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.15em;
+  color: $color;
+  font-family: $font-family;
+  font-size: $font-size;
+}
+@mixin common_btn {
+  font-family: $font-family-inter;
+  font-weight: 600;
+  font-size: 29px;
+  line-height: 112%;
+  text-align: center;
+  letter-spacing: 0.15em;
+  color: $white_color;
+  background-color: $btn_bg;
+  padding: 16px 20px;
+  border-radius: 5px;
+  transition: $transition;
+  border: none;
+  &:hover {
+    background-color: $white_color;
+    color: $btn_hover_color;
+  }
+}
+
+@mixin common_heading {
+  font-family: $font-family-inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: $white_color;
+}
+@mixin common_links {
+  font-family: $font-family-inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  color: $white_color_2;
+  display: block;
+}

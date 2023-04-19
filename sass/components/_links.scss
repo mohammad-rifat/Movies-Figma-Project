@@ -1,0 +1,104 @@
+@import "../variable/variable";
+@import "../mixins/mixin";
+/* ====================== 
+      LINKS START 
+=========================*/
+#links {
+  background-color: $links_bg;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  .container {
+    .row {
+      .col-lg-12 {
+        padding-bottom: 44px;
+        .item {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .social_links {
+            a {
+              display: inline-flex;
+              height: 35px;
+              width: 35px;
+              border: 1px solid $white_color;
+              border-radius: 50%;
+              justify-content: center;
+              align-items: center;
+              color: $white_color;
+              margin-left: 10px;
+              transition: $transition;
+              &:hover{
+                color: $red;
+                border-color: $red;
+              }
+            }
+          }
+        }
+      }
+      .col-lg-2 {
+        .item {
+          width: 100%;
+          display: flex;
+        }
+      }
+      .col-lg-3{
+        .item {
+          p {
+            font-family: $font-family-inter;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: $white_color;
+            padding-right: 15px;
+          }
+        }
+      }
+      .col-lg-3 {
+        .item {
+            display: block;
+          .heading {
+            h4 {
+              @include common_heading;
+            }
+            
+          }
+          .other_links {
+            a {
+              @include common_links;
+              margin-bottom: 1px;
+              transition: $transition;
+              &:hover{
+                opacity: .8;
+              }
+            }
+          }
+        }
+      }
+      .col-lg-2 {
+        .item {
+            display: block;
+          .heading {
+            h4 {
+              @include common_heading;
+            }
+            
+          }
+          .other_links {
+            a {
+              @include common_links;
+              margin-bottom: 1px;
+              &:hover{
+                opacity: .8;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* ====================== 
+      LINKS END
+=========================*/

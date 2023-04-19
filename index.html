@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/logo_icon.png" />
+    <title>Movie</title>
+    <!-- GOOGLE FONT START -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- poppins  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- kaushan script -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Inter  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- jura  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- GOOGLE FONT END  -->
+    <!-- FONT AWESOME CSS  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- SLICK CSS  -->
+    <link rel="stylesheet" href="./css/slick.css" />
+    <!-- BOOTSTRAP CSS  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- MY CSS  -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- RESPONSIVE CSS  -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <!-- ==================================
+                   NAVBAR START 
+    ==================================== -->
+    <nav class="navbar navbar-expand-lg" id="navigation_bar">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.png" alt="logo" class="img-fluid" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Tv Shows </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Movies </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> New & Popular </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Browse</a>
+            </li>
+          </ul>
+        </div>
+        <!-- offcanvas button start  -->
+        <button
+          class="btn btn-primary offcanvas_btn"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions"
+          aria-controls="offcanvasWithBothOptions"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <!-- offcanvas button end -->
+      </div>
+    </nav>
+    <!-- offcanvas sidebar start  -->
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+          MENU
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="javascript:void(0)">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)"> Tv Shows </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)"> Movies </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)"> New & Popular </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">My List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)"> Browse</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- offcanvas sidebar end -->
+    <!-- ==================================
+                   NAVBAR END
+    ==================================== -->
+    <!-- ==================================
+                   BANNER START
+    ==================================== -->
+    <section id="banner">
+      <div class="overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="banner_info">
+                <h1><span>THE</span> SANdMAN</h1>
+                <h4>It’s Official: More Episodes Are Coming</h4>
+                <p>
+                  After years of impisonment, Morpheus - The King of Dreams-
+                  embarks on a journey across worlds to fine what was stolen
+                  from him and resrore his power
+                </p>
+                <div class="banner_btn">
+                  <a href="javascript:void(0)">
+                    <i class="fa-solid fa-play"></i>
+                    play</a
+                  >
+                  <a href="javascript:void(0)">
+                    <i class="fa-solid fa-info"></i>
+                    More Info
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- slider start  -->
+        <div class="movie_slider">
+          <div class="slide_item">
+            <div class="movie_item">
+              <div class="image">
+                <img src="./images/slider_1.jpg" alt="" class="img-fluid" />
+                <div class="movie_overlay">
+                  <a href="javascript:void(0)">
+                    <i class="fa-solid fa-play"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide_item">
+            <div class="movie_item">
+              <div class="image">
+                <img src="./images/slider_2.jpg" alt="" class="img-fluid" />
+                <div class="movie_overlay">
+                  <a href="javascript:void(0)">
+                    <i class="fa-solid fa-play"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide_item">
+            <div class="movie_item">
+              <div class="image">
+                <img src="./images/slider_3.jpg" alt="" class="img-fluid" />
+                <div class="movie_overlay">
+                  <a href="javascript:void(0)">
+                    <i class="fa-solid fa-play"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide_item">
+            <div class="movie_item">
+              <div class="image">
+                <img src="./images/slider_4.jpg" alt="" class="img-fluid" />
+                <div class="movie_overlay">
+                  <a href="javascript:void(0)">
+                    <i class="fa-solid fa-play"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide_item">
+            <div class="movie_item">
+              <div class="image">
+                <img src="./images/slider_5.jpg" alt="" class="img-fluid" />
+                <div class="movie_overlay">
+                  <a href="javascript:void(0)">
+                    <i class="fa-solid fa-play"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide_item">
+            <div class="movie_item">
+              <div class="image">
+                <img src="./images/slider_6.jpg" alt="" class="img-fluid" />
+                <div class="movie_overlay">
+                  <a href="javascript:void(0)">
+                    <i class="fa-solid fa-play"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide_item">
+            <div class="movie_item">
+              <div class="image">
+                <img src="./images/slider_7.jpg" alt="" class="img-fluid" />
+                <div class="movie_overlay">
+                  <a href="javascript:void(0)">
+                    <i class="fa-solid fa-play"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- slider end -->
+      </div>
+    </section>
+    <!-- ==================================
+                   BANNER END
+    ==================================== -->
+    <!-- ==================================
+                   QUALITY START
+    ==================================== -->
+    <section id="quality">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="text">
+              <h3>We Focus on Quality Entertainment</h3>
+              <p>
+                Our main focus is to provide the best entertainment possible for
+                our players. we place key emphasis on creating movies that are
+                of a high quality in every way possible. This means that we
+                endure that all our movies are engoging. our feature uniqe and
+                captivating and we leave it up to the experts. Reshot's huge
+                collection of free stuff is brought to you by
+              </p>
+              <button>Learn More</button>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="image">
+              <img src="./images/slider_6.jpg" alt="image" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==================================
+                   QUALITY END
+    ==================================== -->
+    <!-- ==================================
+                   LINKS PART START
+    ==================================== -->
+    <section id="links">
+      <div class="container">
+        <div class="row g-1">
+          <div class="col-lg-12">
+            <div class="item">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="./images/logo.png" alt="logo" class="img-fluid" />
+                </a>
+              </div>
+              <div class="social_links">
+                <a href="javascript:void(0)">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="javascript:void(0)">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="javascript:void(0)">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="javascript:void(0)">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="javascript:void(0)">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 images_text">
+            <div class="item">
+              <div class="image">
+                <img
+                  src="./images/Rectangle_48.jpg"
+                  alt="image"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="item">
+              <p>
+                Lorem Ipsum as their default model text, and a search for 'lorem
+                ipsum' will uncover many web sites still in their infancy.
+                Various versions have evolved over the years.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="item">
+              <div class="heading">
+                <h4>Information Company</h4>
+              </div>
+              <div class="other_links">
+                <a href="javascript:void(0)"> About US</a>
+                <a href="javascript:void(0)"> Our Impact</a>
+                <a href="javascript:void(0)"> Digital Payments</a>
+                <a href="javascript:void(0)"> Membership</a>
+                <a href="javascript:void(0)"> Terms & Conditions</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 my_links">
+            <div class="item">
+              <div class="heading">
+                <h4>Account</h4>
+              </div>
+              <div class="other_links">
+                <a href="javascript:void(0)"> FAQ</a>
+                <a href="javascript:void(0)"> Track Your Order</a>
+                <a href="javascript:void(0)"> Returns & Refunds</a>
+                <a href="javascript:void(0)"> Take Our Feedback</a>
+                <a href="javascript:void(0)"> Contact Us</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 my_links">
+            <div class="item">
+              <div class="heading">
+                <h4>Info</h4>
+              </div>
+              <div class="other_links">
+                <a href="javascript:void(0)"> Terms & Conditions</a>
+                <a href="javascript:void(0)"> Privacy Policy</a>
+                <a href="javascript:void(0)"> Sitrmap</a>
+                <a href="javascript:void(0)"> Privacy Policy</a>
+                <a href="javascript:void(0)"> Sitemap </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==================================
+                   LINKS PART END
+    ==================================== -->
+    <!-- ==================================
+                   FOOTER START
+    ==================================== -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="text">
+              <span>
+                2022 SkillTest. All rights reserved
+                <a href="javascript:void(0)"> Creative IT </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ==================================
+                   FOOTER END
+    ==================================== -->
+    <!-- JQUERY VERSION  -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <!-- SLICK JS  -->
+    <script src="./js/slick.min.js"></script>
+    <!-- BOOTSTRAP JS  -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- MY JS  -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
