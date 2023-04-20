@@ -1,0 +1,33 @@
+@import "../variable/variable";
+@import "../mixins/mixin";
+/* ====================== 
+      MOVE TOP START 
+=========================*/
+.move_top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  opacity: 0;
+  visibility: hidden;
+  transition: $transition;
+  a {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: $white_color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i {
+      color: $footer_bg;
+      font-size: 18px;
+    }
+  }
+}
+.move_top.show{
+    opacity: 1;
+    visibility: visible;
+}
+/* ====================== 
+      MOVE TOP END
+=========================*/

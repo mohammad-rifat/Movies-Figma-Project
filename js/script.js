@@ -42,3 +42,26 @@ $(function () {
     ],
   });
 });
+//MOVE TOP START
+let move_top = document.querySelector(".move_top");
+window.addEventListener("scroll", function () {
+  let scroll_value = Math.ceil(window.scrollY);
+  if (scroll_value > 150) {
+    move_top.classList.add("show");
+  } else {
+    move_top.classList.remove("show");
+  }
+});
+//MOVE TOP END
+//STICKY NAVBAR START
+let navigation_bar = document.querySelector("#navigation_bar");
+
+window.addEventListener("scroll", function () {
+  let scroll_value_2 = Math.ceil(window.scrollY);
+  if (scroll_value_2 > 150) {
+    navigation_bar.classList.add("sticky");
+  } else {
+    navigation_bar.classList.remove("sticky");
+  }
+});
+//STICKY NAVBAR END

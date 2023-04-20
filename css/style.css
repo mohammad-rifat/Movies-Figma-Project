@@ -23,6 +23,15 @@ img {
   vertical-align: middle;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 20px;
+}
+
 /* =====================
 COMMON CSS END
 =======================*/
@@ -133,6 +142,22 @@ COMMON CSS END
 
 /* ====================== 
       OFFCANVAS SIDEBAR END
+=========================*/
+/* ====================== 
+      STICKY NAVBAR START
+=========================*/
+#navigation_bar.sticky {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #080F18;
+  width: 100%;
+  z-index: 999;
+}
+
+/* ====================== 
+      STICKY NAVBAR END
 =========================*/
 /* ====================== 
       BANNER START 
@@ -442,5 +467,38 @@ footer .container .row .col-lg-12 .text span a {
 
 /* ====================== 
       FOOTER END
+=========================*/
+/* ====================== 
+      MOVE TOP START 
+=========================*/
+.move_top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all linear 0.3s;
+}
+.move_top a {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.move_top a i {
+  color: #080F18;
+  font-size: 18px;
+}
+
+.move_top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ====================== 
+      MOVE TOP END
 =========================*/
 /* ALL COMPONENTS END*//*# sourceMappingURL=style.css.map */
